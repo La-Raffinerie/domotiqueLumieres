@@ -18,6 +18,7 @@ Ce croquis connecte l'ESP32 au broker MQTT et envoie une commande quand
   
 
 ## Configuration du Mosquitto
+```
 switch:
   - platform: mqtt
     name: "Example_Switch"
@@ -35,12 +36,15 @@ light:
     payload_off: "off"
     retain: true
     qos: 2
-    
+```
+
+
 ## Références
 ### Esp32-s2
 Le support sur Arduino de l'ESP32-S2 est encore en développement, l'installation est donc un peu fastidieuse, ce site résume bien :
 https://www.mischianti.org/2020/12/01/esp32-s2-pinout-specs-and-arduino-ide-configuration-1/
 
 ### Le tuto de départ sur Mqtt / esp32 / home-assistant
-*Merci Sparkfun !*
+**Merci Sparkfun !**
+
 https://learn.sparkfun.com/tutorials/using-home-assistant-to-expand-your-home-automations/example-1-mqtt--esp32
