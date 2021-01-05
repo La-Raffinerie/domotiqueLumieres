@@ -4,6 +4,8 @@
   Example for controlling a light using MQTT
   by: Alex Wende, SparkFun Electronics
 
+  Des boutons d'arcade lumineux permettent de commander les lumières
+  à distance :
   Ce croquis connecte l'ESP32 au broker MQTT et envoie une commande quand 
   un bouton est pressé. Il souscrit au topic d'état correspondant pour
   être mis à jour des changements d'état venant d'ailleurs, et
