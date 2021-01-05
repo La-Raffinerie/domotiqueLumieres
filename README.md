@@ -24,6 +24,7 @@ Le microcontroleur est un ESP32-S2
   être mis à jour des changements d'état venant d'ailleurs, et
   - quand il recoit "on" il allume la led du bouton, 
   - quand il recoit "off" il éteint la led du bouton.
+  
   L'état lumineux des boutons peut varier aussi selon l'état de l'application,
   par exemple la lumière serpentera entre les boutons pendant la connection
   wifi
