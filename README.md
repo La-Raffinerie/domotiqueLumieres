@@ -1,12 +1,12 @@
 # domotiqueLumieres
 
-Cette série de sketch Arduino permet d'allumer/éteindre des lumières à distance, en utilisant des boutons d'arcade (par l'intérmédiaire d'un broker MQTT). 
-Le microcontroleur est un ESP32-S2
+Cette série de sketch Arduino permet d'allumer/éteindre des lumières à distance, en utilisant des boutons d'arcade. 
+Le microcontroleur est un ESP32-S2, et la communication passe par un broker MQTT (Mosquitto)
 
 ## esp32_MQTT_relays
   Les lumières sont actionnées par des relais : 
   
-  Ce croquis connecte l'ESP32 au broker MQTT et souscrit à un topic pour
+  Ce sketch Arduino connecte l'ESP32 au broker MQTT et souscrit à un topic pour
   écouter les commandes de lumière :
   - quand il recoit "on" il met le relay à LOW, 
   - quand il recoit "off" il met le relais à HIGH.
@@ -19,7 +19,7 @@ Le microcontroleur est un ESP32-S2
   Des boutons d'arcade lumineux permettent de commander les lumières
   à distance :
   
-  Ce croquis connecte l'ESP32 au broker MQTT et envoie une commande quand 
+  Ce sketch Arduino connecte l'ESP32 au broker MQTT et envoie une commande quand 
   un bouton est pressé. Il souscrit au topic d'état correspondant pour
   être mis à jour des changements d'état venant d'ailleurs, et
   - quand il recoit "on" il allume la led du bouton, 
@@ -31,6 +31,7 @@ Le microcontroleur est un ESP32-S2
   
 
 ## Configuration du Mosquitto
+Ceci est un exemple, les valeurs sont de command_topic et state_topic sont à adapter
 ```
 switch:
   - platform: mqtt
