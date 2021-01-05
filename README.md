@@ -1,6 +1,6 @@
 # domotiqueLumieres
 
-Cette série de sketch permet d'allumer/éteindre des lumières à distance, en utilisant des boutons d'arcade (par l'intérmédiaire d'un broker MQTT). 
+Cette série de sketch Arduino permet d'allumer/éteindre des lumières à distance, en utilisant des boutons d'arcade (par l'intérmédiaire d'un broker MQTT). 
 Le microcontroleur est un ESP32-S2
 
 ## esp32_MQTT_relays
